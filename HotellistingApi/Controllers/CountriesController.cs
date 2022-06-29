@@ -43,7 +43,7 @@ namespace HotellistingApi.Controllers
         {
             var country =await countriesRepository.GetDetails(id);
 
-            if (country == null)
+            if (country == null)  
             {
                 return NotFound();
             }
